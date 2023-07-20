@@ -35,7 +35,7 @@ export default function NavBar() {
     setMenuOpen(!menuOpen);
   };
   return (
-    <header className="border-bottom fixed z-30 w-full border border-slate-50 bg-white shadow-sm">
+    <header className="border-bottom fixed z-30 w-full border border-slate-50 top-0 bg-white shadow-sm">
       <Container>
         <div className="z-20 flex items-center justify-between py-6">
           <Link href="/">

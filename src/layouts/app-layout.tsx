@@ -19,7 +19,7 @@ export default function AppLayout({ title, children }: ILayoutProps) {
         />
       </Head>
 
-      <main className="mt-20">{children}</main>
+      <main className="">{children}</main>
     </>
   );
 }
