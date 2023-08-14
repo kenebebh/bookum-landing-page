@@ -28,6 +28,7 @@ export default function Login() {
   });
 
   const loginHandler = (data: SupportForm) => {
+    console.log(data);
     console.log("submit is supposed to run");
     mutate(data);
   };
@@ -75,7 +76,7 @@ export default function Login() {
           <input
             type="text"
             id="subject"
-            placeholder="Enter Your issue type..."
+            placeholder="Enter Your subject..."
             className="bg-transparent placeholder:text-sm placeholder:text-secondary focus:outline-none"
             {...register("subject")}
           />
@@ -85,7 +86,7 @@ export default function Login() {
           <input
             type="text"
             id="description"
-            placeholder="Enter Your issue type..."
+            placeholder="Enter Your description..."
             className="bg-transparent placeholder:text-sm placeholder:text-secondary focus:outline-none"
             {...register("description")}
           />

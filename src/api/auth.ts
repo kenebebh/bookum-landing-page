@@ -41,7 +41,7 @@ export const verifySupportForm = async ({
   issue,
   subject,
   description,
-}: SupportForm): Promise<{}> => {
+}: SupportForm) => {
   const response = await axiosPublicInstance.post("/api/users/ticket", {
     email,
     issueType,
